@@ -1,38 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: #672584;
+  height: max-content;
   min-height: 100vh;
+}
+h3 {
+  color: #fff;
+}
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  margin: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.dice-wrapper {
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.locked-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  border: 8px solid #1dc701;
+  border-radius: 15px;
+}
+.roll-btn {
+  font-family: "Lemon", serif;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+._space3d {
+  perspective: unset !important;
 }
